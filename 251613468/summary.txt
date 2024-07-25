@@ -1,0 +1,14 @@
+
+Our project uses a web scraping algorithm to retrieve some information on all 50 states in the US.
+Based on the information retrieved, we came up with 3 different hypotheses and did some testing
+on each to draw our conclusions. We also used graph visualizations to present our data more clearly.
+Finally, we implemented BFS based on border information on each state to find the shortest path
+between states.
+
+This project was part empirical analysis and part implementation containing information retrieval
+and graph algorithms.
+We all worked on the project together and had many calls to work together and bounce ideas
+off each other. Kofi was mainly responsible for the web scraping and graph algorithm, Zachary is
+responsible for visualizations and some hypothesis testing, while Dylan worked more on the
+hypotheses development testing and conclusions.
+However, we eventually executed all tasks as a team.

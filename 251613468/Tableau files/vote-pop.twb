@@ -1,0 +1,642 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.24.0314.1442                               -->
+<workbook original-version='18.1' source-build='2023.3.4 (20233.24.0314.1442)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Electoral_College' inline='true' name='federated.1s2lyw40pv129o1a5lcdr0qpcm4e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Electoral_College' name='textscan.0o3t1l20rl3x271g991ag1knl8hh'>
+            <connection class='textscan' directory='D:/Course/NETS1500/proj' filename='Electoral_College.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0o3t1l20rl3x271g991ag1knl8hh' name='Electoral_College.csv' table='[Electoral_College#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='string' name='Full_State' ordinal='0' />
+            <column datatype='string' name='Abb_State' ordinal='1' />
+            <column datatype='integer' name='Electoral_College_Votes' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0o3t1l20rl3x271g991ag1knl8hh' name='Electoral_College.csv' table='[Electoral_College#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='string' name='Full_State' ordinal='0' />
+              <column datatype='string' name='Abb_State' ordinal='1' />
+              <column datatype='integer' name='Electoral_College_Votes' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0o3t1l20rl3x271g991ag1knl8hh' name='population data_transposed.csv' table='[population data_transposed#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='string' name='State' ordinal='0' />
+              <column datatype='integer' name='Total' ordinal='1' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Electoral_College.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[population data_transposed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Full_State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Full_State]</local-name>
+            <parent-name>[Electoral_College.csv]</parent-name>
+            <remote-alias>Full_State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Electoral_College.csv_C0BDC57AAB0642C29F41D8AA927EE513]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Abb_State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Abb_State]</local-name>
+            <parent-name>[Electoral_College.csv]</parent-name>
+            <remote-alias>Abb_State</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Electoral_College.csv_C0BDC57AAB0642C29F41D8AA927EE513]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electoral_College_Votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Electoral_College_Votes]</local-name>
+            <parent-name>[Electoral_College.csv]</parent-name>
+            <remote-alias>Electoral_College_Votes</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Electoral_College.csv_C0BDC57AAB0642C29F41D8AA927EE513]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[population data_transposed.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population data_transposed.csv_8B8155BD128D4B32A6ED44F716D977DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total]</local-name>
+            <parent-name>[population data_transposed.csv]</parent-name>
+            <remote-alias>Total</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population data_transposed.csv_8B8155BD128D4B32A6ED44F716D977DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Abb State' datatype='string' name='[Abb_State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Electoral College Votes' datatype='integer' name='[Electoral_College_Votes]' role='measure' type='quantitative' />
+      <column caption='Full State' datatype='string' name='[Full_State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Electoral_College.csv' datatype='table' name='[__tableau_internal_object_id__].[Electoral_College.csv_C0BDC57AAB0642C29F41D8AA927EE513]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='population data_transposed.csv' datatype='table' name='[__tableau_internal_object_id__].[population data_transposed.csv_8B8155BD128D4B32A6ED44F716D977DF]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Electoral_College.csv' id='Electoral_College.csv_C0BDC57AAB0642C29F41D8AA927EE513'>
+            <properties context=''>
+              <relation connection='textscan.0o3t1l20rl3x271g991ag1knl8hh' name='Electoral_College.csv' table='[Electoral_College#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='string' name='Full_State' ordinal='0' />
+                  <column datatype='string' name='Abb_State' ordinal='1' />
+                  <column datatype='integer' name='Electoral_College_Votes' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='population data_transposed.csv' id='population data_transposed.csv_8B8155BD128D4B32A6ED44F716D977DF'>
+            <properties context=''>
+              <relation connection='textscan.0o3t1l20rl3x271g991ag1knl8hh' name='population data_transposed.csv' table='[population data_transposed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='integer' name='Total' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Full_State]' />
+              <expression op='[State]' />
+            </expression>
+            <first-end-point object-id='Electoral_College.csv_C0BDC57AAB0642C29F41D8AA927EE513' />
+            <second-end-point object-id='population data_transposed.csv_8B8155BD128D4B32A6ED44F716D977DF' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='state_area+' inline='true' name='federated.0lxm88a1haqqiw1coq1c11drvb1m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='state_area' name='textscan.1leyaeq10hvntp19w5rqn0uc3h84'>
+            <connection class='textscan' directory='D:/Course/NETS1500/proj' filename='state_area.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1leyaeq10hvntp19w5rqn0uc3h84' name='Electoral_College.csv' table='[Electoral_College#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='string' name='Full_State' ordinal='0' />
+            <column datatype='string' name='Abb_State' ordinal='1' />
+            <column datatype='integer' name='Electoral_College_Votes' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1leyaeq10hvntp19w5rqn0uc3h84' name='state_area.csv' table='[state_area#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='string' name='state' ordinal='0' />
+              <column datatype='integer' name='area (sq. mi)' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1leyaeq10hvntp19w5rqn0uc3h84' name='Electoral_College.csv' table='[Electoral_College#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='string' name='Full_State' ordinal='0' />
+              <column datatype='string' name='Abb_State' ordinal='1' />
+              <column datatype='integer' name='Electoral_College_Votes' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1leyaeq10hvntp19w5rqn0uc3h84' name='population data_transposed.csv' table='[population data_transposed#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='string' name='State' ordinal='0' />
+              <column datatype='integer' name='Total' ordinal='1' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[state_area.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Electoral_College.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[population data_transposed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[state_area.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[state_area.csv_467133F96D50436D8EDEE3FBE5F18C1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area (sq. mi)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[area (sq. mi)]</local-name>
+            <parent-name>[state_area.csv]</parent-name>
+            <remote-alias>area (sq. mi)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[state_area.csv_467133F96D50436D8EDEE3FBE5F18C1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Full_State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Full_State]</local-name>
+            <parent-name>[Electoral_College.csv]</parent-name>
+            <remote-alias>Full_State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Electoral_College.csv_69F9BBF46A7E418584B81910F22907E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Abb_State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Abb_State]</local-name>
+            <parent-name>[Electoral_College.csv]</parent-name>
+            <remote-alias>Abb_State</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Electoral_College.csv_69F9BBF46A7E418584B81910F22907E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electoral_College_Votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Electoral_College_Votes]</local-name>
+            <parent-name>[Electoral_College.csv]</parent-name>
+            <remote-alias>Electoral_College_Votes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Electoral_College.csv_69F9BBF46A7E418584B81910F22907E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[population data_transposed.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population data_transposed.csv_9309AE32AFDB4681B7D34CFB86E4A949]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total]</local-name>
+            <parent-name>[population data_transposed.csv]</parent-name>
+            <remote-alias>Total</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[population data_transposed.csv_9309AE32AFDB4681B7D34CFB86E4A949]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Abb State' datatype='string' name='[Abb_State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Electoral College Votes' datatype='integer' name='[Electoral_College_Votes]' role='measure' type='quantitative' />
+      <column caption='Full State' datatype='string' name='[Full_State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State1' datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Electoral_College.csv' datatype='table' name='[__tableau_internal_object_id__].[Electoral_College.csv_69F9BBF46A7E418584B81910F22907E4]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='population data_transposed.csv' datatype='table' name='[__tableau_internal_object_id__].[population data_transposed.csv_9309AE32AFDB4681B7D34CFB86E4A949]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='state_area.csv' datatype='table' name='[__tableau_internal_object_id__].[state_area.csv_467133F96D50436D8EDEE3FBE5F18C1F]' role='measure' type='quantitative' />
+      <column caption='Area (Sq. Mi)' datatype='integer' name='[area (sq. mi)]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Electoral_College.csv' id='Electoral_College.csv_69F9BBF46A7E418584B81910F22907E4'>
+            <properties context=''>
+              <relation connection='textscan.1leyaeq10hvntp19w5rqn0uc3h84' name='Electoral_College.csv' table='[Electoral_College#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='string' name='Full_State' ordinal='0' />
+                  <column datatype='string' name='Abb_State' ordinal='1' />
+                  <column datatype='integer' name='Electoral_College_Votes' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='population data_transposed.csv' id='population data_transposed.csv_9309AE32AFDB4681B7D34CFB86E4A949'>
+            <properties context=''>
+              <relation connection='textscan.1leyaeq10hvntp19w5rqn0uc3h84' name='population data_transposed.csv' table='[population data_transposed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='integer' name='Total' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='state_area.csv' id='state_area.csv_467133F96D50436D8EDEE3FBE5F18C1F'>
+            <properties context=''>
+              <relation connection='textscan.1leyaeq10hvntp19w5rqn0uc3h84' name='state_area.csv' table='[state_area#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='string' name='state' ordinal='0' />
+                  <column datatype='integer' name='area (sq. mi)' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[state]' />
+              <expression op='[Full_State]' />
+            </expression>
+            <first-end-point object-id='state_area.csv_467133F96D50436D8EDEE3FBE5F18C1F' />
+            <second-end-point object-id='Electoral_College.csv_69F9BBF46A7E418584B81910F22907E4' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Full_State]' />
+              <expression op='[State]' />
+            </expression>
+            <first-end-point object-id='Electoral_College.csv_69F9BBF46A7E418584B81910F22907E4' />
+            <second-end-point object-id='population data_transposed.csv_9309AE32AFDB4681B7D34CFB86E4A949' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Scatter Plot Hypo1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electoral_College' name='federated.1s2lyw40pv129o1a5lcdr0qpcm4e' />
+            <datasource caption='state_area+' name='federated.0lxm88a1haqqiw1coq1c11drvb1m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lxm88a1haqqiw1coq1c11drvb1m'>
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column caption='Area (Sq. Mi)' datatype='integer' name='[area (sq. mi)]' role='measure' type='quantitative' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[area (sq. mi)]' derivation='Sum' name='[sum:area (sq. mi):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1s2lyw40pv129o1a5lcdr0qpcm4e'>
+            <column caption='Electoral College Votes' datatype='integer' name='[Electoral_College_Votes]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electoral_College_Votes]' derivation='Sum' name='[sum:Electoral_College_Votes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1s2lyw40pv129o1a5lcdr0qpcm4e].[sum:Electoral_College_Votes:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1s2lyw40pv129o1a5lcdr0qpcm4e].[sum:Electoral_College_Votes:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0lxm88a1haqqiw1coq1c11drvb1m].[sum:Total:qk]' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0lxm88a1haqqiw1coq1c11drvb1m].[sum:Total:qk]' />
+              <text column='[federated.1s2lyw40pv129o1a5lcdr0qpcm4e].[none:State:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='size' value='1' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1857' />
+                <format attr='maxwidth' value='1857' />
+                <format attr='minheight' value='1077' />
+                <format attr='maxheight' value='1077' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1857' />
+                <format attr='maxwidth' value='1857' />
+                <format attr='minheight' value='1077' />
+                <format attr='maxheight' value='1077' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lxm88a1haqqiw1coq1c11drvb1m].[sum:area (sq. mi):qk]</rows>
+        <cols>[federated.1s2lyw40pv129o1a5lcdr0qpcm4e].[sum:Electoral_College_Votes:qk]</cols>
+      </table>
+      <simple-id uuid='{B75780FA-5255-4021-AAB2-C5D1E1F698A8}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' maximized='true' name='Scatter Plot Hypo1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.0lxm88a1haqqiw1coq1c11drvb1m].[sum:Total:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1s2lyw40pv129o1a5lcdr0qpcm4e].[none:Full_State:nk]</field>
+            <field>[federated.1s2lyw40pv129o1a5lcdr0qpcm4e].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3FD7FBAB-2074-4972-B241-B450BADCFA6C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Scatter Plot Hypo1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
